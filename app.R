@@ -4,12 +4,11 @@ library(bslib)
 
 
 ## Parameters for the species 
-# The parameters chosen are hypothetical, but based on real growth measures of the different animal groups
 species_param <- list(
   Polychaeta = list(r = 0.8, k = 1500), 
   Starfish = list(r = 0.2, k = 500), 
   Molluscs = list(r = 0.5, k = 800)
-)
+)# The parameters chosen are hypothetical, but based on real growth measures of the different animal groups
 
 ## Function for simulation of the fishery
 simulate_fishery <- function(r, K, B0 = NULL, crab_density = 0.1, years = 30) {
