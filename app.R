@@ -4,17 +4,17 @@ library(bslib)
 
 
 ## Parameters for the species 
-## The parameters chosen are hypothetical, but based on real growth measures of the different animal groups. 
+# The parameters chosen are hypothetical, but based on real growth measures of the different animal groups
 species_param <- list(
   Polychaeta = list(r = 0.8, k = 1500), 
   Starfish = list(r = 0.2, k = 500), 
   Molluscs = list(r = 0.5, k = 800)
 )
 
-## Function for simulation of the fishery 
+## Function for simulation of the fishery
 simulate_fishery <- function(r, K, B0 = NULL, crab_density = 0.1, years = 30) {
   years <- as.integer(years)
-  if (is.null(B0)) B0 <- K * 0.8
+  if (is.null(B0)) B0 <- K * 0.8 #the base biomass before predation is 80% of carrying capasity
   B <- numeric(years)
   C <- numeric(years)
   B[1] <- B0
@@ -32,7 +32,7 @@ simulate_fishery <- function(r, K, B0 = NULL, crab_density = 0.1, years = 30) {
 }
 
 
-## UI
+## User Interface
 ui <- page_sidebar(
   title = "Feeding effect of king crab on benthic fauna", 
   sidebar = sidebar(
