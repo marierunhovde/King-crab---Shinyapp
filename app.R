@@ -4,7 +4,7 @@ library(bslib)
 
 
 ## Parameters for the species 
-## The parameters chosen are hypothetical, but based on real growth measures of the different animal groups 
+## The parameters chosen are hypothetical, but based on real growth measures of the different animal groups. 
 species_param <- list(
   Polychaeta = list(r = 0.8, k = 1500), 
   Starfish = list(r = 0.2, k = 500), 

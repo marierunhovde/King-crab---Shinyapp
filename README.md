@@ -1,18 +1,18 @@
 
 # King crab predation simulator
 
-This Shiny app demonstrates how king crab predation impact benthic species such as polychaetes, starfish, and molluscs over time. 
+This Shiny app demonstrates how king crab predation impact benthic species such as Polychaetes, Starfish, and Molluscs over time. 
 It is an educational tool used to visualize how different densities of king crabs may affect the population of their prey through a simulation. 
 
 Note: The values for r (intrinsic growth rate) and K (carrying capacity) used in the simulation are hypothetical and chosen for illustrative purposes. 
 
 ## Features
 
-- Select which benthic species to simulate (polychaeta, starfish, molluscs).
+- Select which benthic species to simulate (Polychaetes, Starfish, Molluscs).
 - Adjust king crab density.
 - Choose predation duration.
 - Click **Simulate** to update the biomass plot.
-- Visualizes how king crab predation affects prey biomass over time.
+- Visualize how king crab predation affects prey biomass over time.
 
 ## How to run the app
 
