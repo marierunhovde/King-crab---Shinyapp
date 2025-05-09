@@ -92,7 +92,7 @@ server <- function(input, output) {
     }))
     
     ggplot(data_table, aes(x = Year, y = Biomass, color = Species)) +
-      geom_line() +
+      geom_line(size = 1.5) +
       theme_minimal() + 
       theme(
         axis.title.x = element_text(size = 14),
